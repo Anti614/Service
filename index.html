@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="scss/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google" content="notranslate">
@@ -51,19 +51,19 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#" data-value="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                        <a class="nav-link" href="#" data-value="pages">Pages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#" data-value="portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#" data-value="blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#" data-value="contact">Contact</a>
                     </li>
                 </ul>
                 <button class="search-icon js-search-toggle" aria-label="Search" type="button" id="toggle-search">
@@ -112,7 +112,7 @@
 
 
     <!--About-->
-    <div class="about">
+    <div class="about" id="pages">
         <div class="container">
             <div class="about__inner row justify-content-center justify-content-xl-between">
                 <div class="about__left col-12 col-xl-6 d-flex justify-content-center mb-5 mb-xl-0">
@@ -160,7 +160,7 @@
     </div>
 
     <!--Work-->
-    <div class="work d-none d-lg-block">
+    <div class="work d-none d-lg-block" id="portfolio">
         <div class="container">
             <h1 class="work__title">Simple & Best Way To Showcase Your Work</h1>
             <p class="work__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod tempor incididunt ut labore et dolore<br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
@@ -370,47 +370,102 @@
 
     <!--Blog-->
 
-<div class="blog">
-    <div class="container">
-        <h2 class="blog__heading col-12 col-lg-4">From blog news</h2>
-        <p class="blog__subheading col-12 col-lg-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-        <div class="blog__inner row justify-content-center justify-content-lg-between">
-            <div class="blog__item col-12 d-flex flex-column flex-md-row">
-                <div class="blog__img d-none d-xl-block"><img src="img/blog_img.png"></div>
-                <div class="blog__content">
+    <div class="blog" id="blog">
+        <div class="container">
+            <h2 class="blog__heading col-12 col-lg-4">From blog news</h2>
+            <p class="blog__subheading col-12 col-lg-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            <div class="blog__inner row justify-content-center justify-content-lg-between">
+                <div class="blog__item col-12 d-flex flex-column flex-md-row">
+                    <div class="blog__img d-none d-xl-block"><img src="img/blog_img.png"></div>
+                    <div class="blog__content">
+                        <div class="blog__date"><span>25 May 2018</span><span>Admin</span></div>
+                        <p class="blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod</p>
+                        <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        <a class="blog__link" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="blog__card col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="blog__date"><span>25 May 2018</span><span>Admin</span></div>
-                    <p class="blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do euismod</p>
-                    <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <p class="blog__title">Lorem ipsum dolor sit amet</p>
+                    <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <a class="blog__link" href="#">Read more</a>
+                </div>
+
+                <div class="blog__card col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="blog__date"><span>25 May 2018</span><span>Admin</span></div>
+                    <p class="blog__title">Lorem ipsum dolor sit amet</p>
+                    <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <a class="blog__link" href="#">Read more</a>
+                </div>
+
+                <div class="blog__card col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="blog__date"><span>25 May 2018</span><span>Admin</span></div>
+                    <p class="blog__title">Lorem ipsum dolor sit amet</p>
+                    <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                     <a class="blog__link" href="#">Read more</a>
                 </div>
             </div>
-            <div class="blog__card col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div class="blog__date"><span>25 May 2018</span><span>Admin</span></div>
-                <p class="blog__title">Lorem ipsum dolor sit amet</p>
-                <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <a class="blog__link" href="#">Read more</a>
-            </div>
-
-            <div class="blog__card col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div class="blog__date"><span>25 May 2018</span><span>Admin</span></div>
-                <p class="blog__title">Lorem ipsum dolor sit amet</p>
-                <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <a class="blog__link" href="#">Read more</a>
-            </div>
-
-            <div class="blog__card col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div class="blog__date"><span>25 May 2018</span><span>Admin</span></div>
-                <p class="blog__title">Lorem ipsum dolor sit amet</p>
-                <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <a class="blog__link" href="#">Read more</a>
-            </div>
-
         </div>
-    </div>
-</div>    
+    </div>    
+
+    <!--Footer-->
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__nav d-none d-lg-block">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <button class="search-icon js-search-toggle" aria-label="Search" type="button" id="toggle-search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </ul>
+                </div>
+
+                <div class="footer__social d-flex justify-content-center align-items-center">
+                    <ul class="social__list d-flex flex-row p-0">
+                        <li class="social__item">
+                            <a class="social__icon" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__icon" href=""><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__icon" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__icon" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__icon" href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__icon" href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__copyright d-flex justify-content-center">Copyright free-psd-template.com</div>
+            </div>
+        </div>
+    </footer>
       
       
-    <script src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap-4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
